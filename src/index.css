@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 
@@ -8,7 +9,7 @@ body{
   font-family: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #f4eeee;
   background: #022c43;
-  overflow: hidden;
+  overflow: auto;
   display: block;
 
 }

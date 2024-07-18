@@ -9,7 +9,6 @@ function About(){
             <p>
                 I have experience working with a variety of technologies including HTML, CSS, JavaScript, and React.
             </p>
-            <Button />
         </section>
     );
 }

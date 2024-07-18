@@ -1,0 +1,19 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;;
+    justify-content: space-between;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    z-index: 1;
+}

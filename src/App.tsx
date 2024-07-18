@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header /> {/* add margin to the bottom of the header just to check */}
       <About />
       <Experience />
       <Projects />

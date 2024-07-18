@@ -1,7 +1,12 @@
 import './Button.css'
+import React from 'react';
 
-function Button(){
-    return <button>Click me</button>
+interface ButtonProps {
+    children: React.ReactNode;
+    onClick?: () => void;
+}
+function Button({children, onClick}: ButtonProps){
+    return <button onClick={onClick}>{children}</button>
 }
 
 export default Button;
