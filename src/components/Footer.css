@@ -1,0 +1,93 @@
+.main-footer{
+    background-color: black;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    box-sizing: border-box;
+    color: white;
+
+    font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.main-container{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer-top{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-name{
+    display: block;
+    max-width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom{
+    display: block;
+    border-top-color: rgb(68, 68, 68);
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: rgb(238, 238, 238);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer-description{
+    font-size: 13px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-socials{
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.social-links{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.social-link{
+    color: rgb(238, 238, 238);
+    text-decoration-color: rgb(238, 238, 238);
+    text-decoration: none solid auto;
+}
+
+img{
+    width: 20px;
+    line-height: 14px;
+    margin-right: 15px;
+    margin-left: 2px;
+}
+
+.name-link{
+    cursor: pointer;
+    text-decoration: underline solid auto;
+}

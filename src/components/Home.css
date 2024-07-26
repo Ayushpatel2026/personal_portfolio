@@ -1,0 +1,68 @@
+.home-content{
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
+    height: 350px;
+    top: 100px;
+    width: 50%; /* or any desired width */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0; /* reset margin if needed */
+}
+
+.home-title{
+    box-sizing: border-box;
+    display: block;
+    color: rgb(17, 17, 17);
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-description{
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+}
+
+.home-description-text{
+    box-sizing: border-box;
+    display: block;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.project-button{
+    display: block;
+    text-align: center;
+}
+
+.project-link{
+    background-color: rgb(120, 67, 233);
+    color: white;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    line-height: 27px;
+    padding-bottom: 13.44px;
+    padding-left: 71.68px;
+    padding-right: 71.68px;
+    padding-top: 13.44px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.project-link:hover{
+    transform: scale(1.1);
+}

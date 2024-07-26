@@ -1,4 +1,5 @@
 import './Header.css';
+import {scrollToTop} from '../utilities/Scroll';
 
 function Header(){
     const scrollToSection = (id: string) => {
@@ -17,7 +18,7 @@ function Header(){
 
     return (
         <div className="header">
-            <div className="logo-container">
+            <div className="logo-container" onClick={() => scrollToTop()}>
                 <span className="header-logo-name">
                     AYUSH PATEL
                 </span>
