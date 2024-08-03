@@ -1,6 +1,90 @@
 #about{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: rgb(235, 235, 235);
 }
 
+.about-heading{
+    color: rgb(17, 17, 17);
+    font-size: 36px;
+    font-weight: 700;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
 
+.about-heading::after{
+    background-color: rgb(76, 104, 198);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    height: 5px;
+    top: 100%;
+    left: 50%;
+    margin-top: 12px;
+}
+
+.about-description{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+
+.skills-section{
+    display: block;
+}
+
+h3{
+    box-sizing: border-box;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.skills{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_icon{
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 9px 18px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    background: linear-gradient(145deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill_icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}

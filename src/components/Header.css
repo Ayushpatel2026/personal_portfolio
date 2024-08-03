@@ -70,7 +70,7 @@
 }
 
 .header-link:active {
-    background-color: #003d7a; /* Even darker blue when button is pressed */
+    color: #003d7a; /* Even darker blue when button is pressed */
 }
 
 .tab-section {

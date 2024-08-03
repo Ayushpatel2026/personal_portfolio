@@ -1,15 +1,23 @@
+#home{
+    /* margin-top: 100px;
+    height: 80vh; */
+
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
 .home-content{
+    max-width: 1000px;
     box-sizing: border-box;
-    display: block;
     font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
-    height: 350px;
-    top: 100px;
-    width: 50%; /* or any desired width */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0;
-    margin: 0; /* reset margin if needed */
+    width: 100%;    
+    text-align: center;
 }
 
 .home-title{
@@ -42,6 +50,7 @@
 .project-button{
     display: block;
     text-align: center;
+    margin-top: 100px;
 }
 
 .project-link{

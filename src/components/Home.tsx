@@ -1,4 +1,5 @@
 import './Home.css';
+import { scrollToSection } from '../utilities/Scroll';
 
 
 function Home(){
@@ -13,7 +14,7 @@ function Home(){
                 </div>
                 
                 <div className="project-button">
-                    <a href='#projects' className="project-link">
+                    <a onClick={() => scrollToSection('projects')} className="project-link">
                         Projects
                     </a>
                 </div>

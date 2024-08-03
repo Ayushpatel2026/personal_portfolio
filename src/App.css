@@ -1,14 +1,21 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  margin: 0;
+  font-family: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(51, 51, 51);
+  background: rgb(245, 245, 245);
+  overflow: auto;
+  display: block;
 }
 
-.card {
-  padding: 2em;
+
+.app-container{
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 300px; /* Prevents sections from getting too narrow */
+  padding: 20px; /* Adds padding inside each section */
+}

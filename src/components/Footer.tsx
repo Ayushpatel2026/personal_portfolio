@@ -3,7 +3,7 @@ import './Footer.css'
 import githubLogo from '../assets/github.png';
 import linkedinLogo from '../assets/linkedin-logo.png';
 
-const Footer = () => {
+function Footer(){
     const currentYear = new Date().getFullYear();
     return (
         <footer className="main-footer">

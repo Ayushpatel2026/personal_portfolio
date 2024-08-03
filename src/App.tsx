@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './components/Header'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -11,7 +10,7 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <div className="app-container">
       <Header /> {/* add margin to the bottom of the header just to check */}
       <Home/>
       <About />
@@ -21,7 +20,7 @@ function App() {
       <Footer>
 
       </Footer>
-    </>
+    </div>
   )
 }
 
