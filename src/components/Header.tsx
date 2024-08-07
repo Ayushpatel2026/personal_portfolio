@@ -12,11 +12,11 @@ function Header(){
             </div>
             <div className="tab-section">
                 <ul className="header-links">
+                    <li className="header-link-wrapper" onClick={() => scrollToTop()}>
+                        <a className="header-link">Home</a>
+                    </li>
                     <li className="header-link-wrapper" onClick={() => scrollToSection('about')}>
                         <a className="header-link">About</a>
-                    </li>
-                    <li className="header-link-wrapper" onClick={() => scrollToSection('experience')}>
-                        <a className="header-link">Experience</a>
                     </li>
                     <li className="header-link-wrapper" onClick={() => scrollToSection('projects')}>
                         <a className="header-link">Projects</a>

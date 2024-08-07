@@ -4,7 +4,6 @@
     display: block;
     font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -15,7 +14,6 @@
     color: rgb(17, 17, 17);
     font-size: 36px;
     font-weight: 700;
-    box-sizing: border-box;
     display: block;
     margin: 0;
     padding: 0;
@@ -27,7 +25,7 @@
 }
 
 .about-heading::after{
-    background-color: rgb(76, 104, 198);
+    background-color: #0073e6;
     background-clip: border-box;
     background-origin: padding-box;
     background-size: auto;
@@ -54,7 +52,6 @@
 }
 
 h3{
-    box-sizing: border-box;
     display: block;
     font-size: 25px;
     font-weight: 700;
@@ -63,7 +60,6 @@ h3{
 }
 
 .skills{
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

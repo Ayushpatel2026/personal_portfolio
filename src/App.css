@@ -7,15 +7,66 @@ body{
   display: block;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 .app-container{
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 section {
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 300px; /* Prevents sections from getting too narrow */
-  padding: 20px; /* Adds padding inside each section */
+}
+
+#projects{
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 50px
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.project-heading {
+  color: rgb(17, 17, 17);
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.project-heading::after {
+  background-color: #0073e6;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto;
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  top: 100%;
+  left: 50%;
+  margin-top: 12px;
+  transform: translateX(-50%);  /* Correctly center the pseudo-element */
 }

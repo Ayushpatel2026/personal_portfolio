@@ -14,14 +14,12 @@
 
 .home-content{
     max-width: 1000px;
-    box-sizing: border-box;
     font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;    
     text-align: center;
 }
 
 .home-title{
-    box-sizing: border-box;
     display: block;
     color: rgb(17, 17, 17);
     font-size: 55px;
@@ -33,13 +31,13 @@
 }
 
 .home-description{
-    box-sizing: border-box;
+    
     display: block;
     height: auto;
 }
 
 .home-description-text{
-    box-sizing: border-box;
+    
     display: block;
     color: rgb(51, 51, 51);
     font-size: 20px;
