@@ -22,14 +22,10 @@ function Header(){
                         <a className="header-link">Projects</a>
                     </li>
                     <li className="header-link-wrapper" onClick={() => scrollToSection('contact')}>
-                        <a className="header-link">Contacts</a>
+                        <a className="header-link">Contact</a>
                     </li>
     
                 </ul>
-                {/* <Tab className="header-tab" onClick={() => scrollToSection('about')}><a className="header-link">About</a></Tab>
-                <Tab className="header-tab" onClick={() => scrollToSection('experience')}><a className="header-link">Experience</a></Tab>
-                <Tab className="header-tab" onClick={() => scrollToSection('projects')}><a className="header-link">Projects</a></Tab>
-                <Tab className="header-tab" onClick={() => scrollToSection('contact')}><a className="header-link">Contact</a></Tab> Contact button will have different style */}
             </div>
         </div>
     );
