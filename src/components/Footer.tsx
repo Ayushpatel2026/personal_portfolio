@@ -14,7 +14,7 @@ function Footer(){
                             Ayush Patel
                         </h2>
                         <p className="footer-description">
-                        Software Engineer with a passion for building beautiful and functional applications
+                            Software Engineering Student at McMaster University
                         </p>
                     </div>
                     <div className="footer-socials">

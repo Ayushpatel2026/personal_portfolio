@@ -7,7 +7,7 @@ function Contact() {
         <section id="contact">
             <h2 className="contact-heading">Contact</h2>
             <p>Thanks for visiting my website!</p>
-            <p> Check out my projects on my 
+            <p> Check out my projects on my
                 <a className="contact-link" target="_blank" href="https://github.com/Ayushpatel2026">
                     <span>GitHub</span>
                     <img src={githubLogo} alt="github" />

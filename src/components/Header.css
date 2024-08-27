@@ -74,18 +74,18 @@
 }
 
 .tab-section {
-    
-    display: block;
+    display: flex;
+    flex-direction: row;
     font-size: 15px;
     margin: 0;
     padding: 0;
     height: 75px;
-    gap: 15px; /* Space between buttons */
+    gap: 0.25rem; /* Space between buttons */
 }
 
 .header-links{
-    
     display: flex;
+    gap: 0.25rem;
     list-style-type: disc;
     padding: 0;
     margin: 0;
@@ -93,18 +93,10 @@
 }
 
 .header-link-wrapper{
-    
     display: list-item;
     height: 75px;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
     text-align: left;
-
-
-}
-
-.tab-section .button {
-    /* This will apply button styles from Button.css */
-    /* Additional styles for buttons in the header if needed */
 }
