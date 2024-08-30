@@ -31,11 +31,11 @@
 .project-right {
     flex: 1;
     padding-left: 20px;
-    text-align: center;
     align-items: center;
 }
 
 .project-right p {
+    text-align: justify;
     font-size: 20px;
     margin: 0 0 10px;
 }
@@ -48,7 +48,8 @@
     font-size: 15px;
 }
 
-.github-link {
+.github-link,
+.website-link{
     background-color: #0073e6; /* Light blue background color */
     color: #fff; /* White text color */
     padding: 8px 15px; /* Slightly increased padding for better appearance */
@@ -59,10 +60,66 @@
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.github-link:hover {
+.github-link:hover,
+.website-link:hover {
     background-color: #005bb5; /* Darker blue for hover effect */
 }
 
-.devpost-link{
+/* .devpost-link{
     visibility: hidden;
+} */
+
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .project {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .project-right {
+        padding-left: 0; /* Remove left padding */
+        margin-top: 10px; /* Add some margin on top */
+    }
+
+    .project-title {
+        margin-top: 5px;
+        font-size: 30px; /* Slightly reduce font size */
+    }
+
+    .project-right p {
+        font-size: 18px; /* Slightly reduce font size for text */
+    }
+
+    .project-links {
+        flex-direction: row;
+        align-items: center; /* Align links to the start */
+    }
+
+    .github-link, .website-link {
+        text-align: center; /* Center the text */
+    }
 }
+
+
+@media (max-width: 480px) {
+     /* For mobile phones */
+     .project {
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .project-title {
+        font-size: 20px; /* Reduce font size for mobile */
+        letter-spacing: 1px; /* Decrease letter spacing */
+    }
+
+    .project-right p {
+        font-size: 12px; /* Reduce text size */
+    }
+
+    .github-link, .website-link {
+        padding: 5px 8px; /* Adjust padding for better appearance */
+        font-size: 14px; /* Reduce font size */
+    }
+}
+  

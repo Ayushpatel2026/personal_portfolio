@@ -103,13 +103,13 @@ section {
   }
 
   .header-logo-name {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .header-link {
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   .project-heading {

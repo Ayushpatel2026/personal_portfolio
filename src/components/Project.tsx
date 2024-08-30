@@ -1,15 +1,23 @@
 import './Project.css'
 
-function Projects(){
+interface ProjectProps {
+    projectTitle: string;
+    projectDescription: string;
+    gitHubLink: string;
+    websiteLink?: string;
+}
+
+function Projects({projectTitle, projectDescription, gitHubLink, websiteLink} : ProjectProps) {
     return (
         <div className="project">
             <div className="project-left">
-                <h2 className="project-title">Rescue Mission</h2>
+                <h2 className="project-title">{projectTitle}</h2>
             </div>
             <div className="project-right">
-                <p> A way to control a drone through a game engine</p>
+                <p> {projectDescription}</p>
                 <div className="project-links">
-                    <a href="#" className="github-link">GitHub</a>
+                    <a href={gitHubLink} className="github-link" target='_blank'>GitHub</a>
+                    {websiteLink && <a href={websiteLink} target='_blank' className="website-link">Deployed App</a>}
                 </div>
             </div>
         </div>

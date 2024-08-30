@@ -92,3 +92,10 @@ img{
     cursor: pointer;
     text-decoration: underline solid auto;
 }
+
+@media(max-width: 480px){
+
+    .footer-description{
+        font-size: 10px;
+    }
+}

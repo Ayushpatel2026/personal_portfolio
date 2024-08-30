@@ -55,6 +55,7 @@ p{
     vertical-align: middle;
     transition: background-color 0.3s ease;
 }
+
 .contact-link span {
     text-decoration: none;
     font-weight: bold;
@@ -71,4 +72,41 @@ p{
 
 .contact-link:hover {
     background-color: white; /* Darker shade for hover */
+}
+
+@media (max-width: 768px) {
+    .contact-heading{
+        font-size: 28px;
+    }
+    p {
+        font-size: 24px; /* Reduce font size for paragraphs */
+    }
+
+    .contact-link {
+        padding: 6px 12px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-link img {
+        width: 20px; /* Reduce icon size */
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading{
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px; /* Further reduce paragraph font size */
+    }
+
+    .contact-link {
+        padding: 5px 10px; /* Further adjust padding for very small screens */
+    }
+
+    .contact-link img {
+        width: 18px; /* Further reduce icon size */
+        height: 18px;
+    }
 }

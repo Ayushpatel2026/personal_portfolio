@@ -42,27 +42,24 @@
 }
 
 .header-link {
-    
+
     color: rgb(51, 51, 51);
-    display: inline-block;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 26.88px;
-    padding-left: 16.128px;
-    padding-right: 16.128px;
-    padding-top: 26.88px;
+    display: flex; /* Change to flex for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0;
+    padding: 0 16.128px; /* Left and right padding */
     font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center; /* Center text */
     text-decoration-color: rgb(51, 51, 51);
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.3s ease;
+    height: 100%; /* Make it full height of the header */
 }
 
 .header-link:hover {
@@ -93,10 +90,12 @@
 }
 
 .header-link-wrapper{
-    display: list-item;
+    display: flex; /* Change to flex */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     height: 75px;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
-    text-align: left;
+    text-align: center; /* Center text */
 }

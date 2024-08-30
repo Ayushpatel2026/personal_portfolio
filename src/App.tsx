@@ -18,8 +18,16 @@ function App() {
           Projects
         </span>
         <div className="project-container">
-          <Project/>
-          <Project/>
+          <Project
+            projectTitle="Chess Engine"
+            projectDescription="This project is a Java-based application that leverages Java Swing utilities to provide a GUI. It has allowed me to practically apply object oriented programming concepts learned in class and showcases a minimax algorithm to calculate computer moves."
+            gitHubLink="https://github.com/Ayushpatel2026/chess-engine"
+          />
+          <Project
+            projectTitle="Rescue Mission"
+            projectDescription="This collaborative class project is an exploration command center for the Island game. Coded in the Java programming language, this project was a great way to learn SOLID and Agile principles. It was also my first introduction to complex UML diagrams and full unit testing."
+            gitHubLink="https://github.com/2AA4-W24/a2-rescue-mission-team-217"
+          />
         </div>
       </section>
       <Contact />
