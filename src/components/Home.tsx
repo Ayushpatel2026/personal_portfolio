@@ -9,7 +9,7 @@ function Home(){
                 <h1 className="home-title">Hey, I am Ayush Patel</h1>
                 <div className="home-description">
                     <p className="home-description-text">
-                        I am a full-stack developer with a passion for building beautiful and functional applications.
+                        I am a software engineer with expertise in full stack development and a passion for problem solving
                     </p>
                 </div>
                 
