@@ -28,6 +28,12 @@ function App() {
             projectDescription="This collaborative class project is an exploration command center for the Island game. Coded in the Java programming language, this project was a great way to learn SOLID and Agile principles. It was also my first introduction to complex UML diagrams and full unit testing."
             gitHubLink="https://github.com/2AA4-W24/a2-rescue-mission-team-217"
           />
+          <Project
+            projectTitle="E-Commerce Website"
+            projectDescription="This is a full stack application built with Next.js, Sanity as the backend CMS, and Stripe for payment processing. This modern e-commerce website provides a seamless shopping experience from browsing products, adding to cart and completing a purchase."
+            gitHubLink='https://github.com/Ayushpatel2026/ecommerce'
+            websiteLink='https://ecommerce-headphonestore.vercel.app/'
+          />
         </div>
       </section>
       <Contact />
