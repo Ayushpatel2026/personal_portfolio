@@ -19,6 +19,12 @@ function App() {
         </span>
         <div className="project-container">
           <Project
+            projectTitle="E-Commerce Website"
+            projectDescription="This is a full stack application built with Next.js, Sanity as the backend CMS, and Stripe for payment processing. This modern e-commerce website provides a seamless shopping experience from browsing products, adding to cart and completing a purchase."
+            gitHubLink='https://github.com/Ayushpatel2026/ecommerce'
+            websiteLink='https://ecommerce-headphonestore.vercel.app/'
+          />
+          <Project
             projectTitle="Chess Engine"
             projectDescription="This project is a Java-based application that leverages Java Swing utilities to provide a GUI. It has allowed me to practically apply object oriented programming concepts learned in class and showcases a minimax algorithm to calculate computer moves."
             gitHubLink="https://github.com/Ayushpatel2026/chess-engine"
@@ -29,10 +35,10 @@ function App() {
             gitHubLink="https://github.com/2AA4-W24/a2-rescue-mission-team-217"
           />
           <Project
-            projectTitle="E-Commerce Website"
-            projectDescription="This is a full stack application built with Next.js, Sanity as the backend CMS, and Stripe for payment processing. This modern e-commerce website provides a seamless shopping experience from browsing products, adding to cart and completing a purchase."
-            gitHubLink='https://github.com/Ayushpatel2026/ecommerce'
-            websiteLink='https://ecommerce-headphonestore.vercel.app/'
+            projectTitle="Note Taking Application"
+            projectDescription="This front end application allows users to create, edit, and organize notes with markdown support and tag-based categorization. It was created using Reactjs, Bootstrap and TypeScript"
+            gitHubLink='https://github.com/Ayushpatel2026/note-app'
+            websiteLink='https://ayushpatel2026.github.io/note-app/'
           />
         </div>
       </section>
