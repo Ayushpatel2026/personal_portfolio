@@ -30,6 +30,12 @@ function App() {
             gitHubLink="https://github.com/Ayushpatel2026/chess-engine"
           />
           <Project
+            projectTitle="Patient Manager"
+            projectDescription="This app simplifies the process of appointments for both patients and clinics allowing easy booking and cancelling of appointments by both patients and clinic admins. This full stack patient management application is built using Next.js, React.js, Appwrite for user authenticationa and data storage, and TailwindCSS and ShadCN for styling. It also uses Twilio for SMS notifications."
+            gitHubLink='https://github.com/Ayushpatel2026/patient-manager'
+            websiteLink='https://patient-manager-one.vercel.app/'
+          />
+          <Project
             projectTitle="Rescue Mission"
             projectDescription="This collaborative class project is an exploration command center for the Island game. Coded in the Java programming language, this project was a great way to learn SOLID and Agile principles. It was also my first introduction to complex UML diagrams and full unit testing."
             gitHubLink="https://github.com/2AA4-W24/a2-rescue-mission-team-217"
