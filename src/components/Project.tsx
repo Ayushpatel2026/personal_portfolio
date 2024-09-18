@@ -1,4 +1,6 @@
 import './Project.css'
+// @ts-ignore
+import React from 'react'
 
 import React from 'react'
 

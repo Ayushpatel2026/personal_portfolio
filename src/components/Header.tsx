@@ -1,5 +1,7 @@
 import './Header.css';
 import {scrollToTop, scrollToSection} from '../utilities/Scroll';
+
+// @ts-ignore
 import React from 'react';
 
 function Header(){
