@@ -1,5 +1,5 @@
 import './Project.css'
-
+// @ts-ignore
 import React from 'react'
 
 interface ProjectProps {

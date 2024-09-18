@@ -2,6 +2,7 @@ import { scrollToTop } from '../utilities/Scroll';
 import './Footer.css'
 import githubLogo from '../assets/github.png';
 import linkedinLogo from '../assets/linkedin-logo.png';
+// @ts-ignore
 import React from 'react';
 
 function Footer(){

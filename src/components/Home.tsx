@@ -1,4 +1,5 @@
 import './Home.css';
+// @ts-ignore
 import React from 'react';
 import { scrollToSection } from '../utilities/Scroll';
 
