@@ -1,5 +1,7 @@
 import './Project.css'
 
+import React from 'react'
+
 interface ProjectProps {
     projectTitle: string;
     projectDescription: string;

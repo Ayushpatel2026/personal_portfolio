@@ -2,6 +2,7 @@ import { scrollToTop } from '../utilities/Scroll';
 import './Footer.css'
 import githubLogo from '../assets/github.png';
 import linkedinLogo from '../assets/linkedin-logo.png';
+import React from 'react';
 
 function Footer(){
     const currentYear = new Date().getFullYear();
@@ -33,7 +34,7 @@ function Footer(){
                 </div>
                 <div className="footer-bottom">
                     &copy; Copyright {currentYear}, Made by
-                    <a className="name-link" onClick={scrollToTop}> Ayush Patel</a>
+                    <a className="name-link" onClick={scrollToTop}>Ayush Patel</a>
                 </div>
             </div>
         </footer>
