@@ -21,6 +21,9 @@ function Header(){
                     <li className="header-link-wrapper" onClick={() => scrollToSection('about')}>
                         <a className="header-link">About</a>
                     </li>
+                    <li className="header-link-wrapper" onClick={() => scrollToSection('experience')}>
+                        <a className="header-link">Experience</a>
+                    </li>
                     <li className="header-link-wrapper" onClick={() => scrollToSection('projects')}>
                         <a className="header-link">Projects</a>
                     </li>

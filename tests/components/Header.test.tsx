@@ -31,6 +31,9 @@ describe('Header', () => {
         const about = screen.getByText('About');
         expect(about).toBeInTheDocument();
 
+        const experience = screen.getByText('Experience');
+        expect(experience).toBeInTheDocument();
+
         const projects = screen.getByText('Projects');
         expect(projects).toBeInTheDocument();
 
@@ -56,6 +59,12 @@ describe('Header', () => {
         const about = screen.getByText('About');
         await user.click(about);
         expect(scrollToSection).toHaveBeenCalledWith('about');
+      });
+
+      it ('scrolls to "Experience" section when experience link is clicked', async () => {
+        const experience = screen.getByText('Experience');
+        await user.click(experience);
+        expect(scrollToSection).toHaveBeenCalledWith('experience');
       });
     
       it('scrolls to "Projects" section when projects link is clicked', async () => {

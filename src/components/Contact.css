@@ -15,10 +15,6 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
-    border-top-color: rgb(17, 17, 17);
-    border-top-style: solid;
-    border-top-width: 2px;
-    padding-top: 10px;
 }
 
 .contact-heading::after {
