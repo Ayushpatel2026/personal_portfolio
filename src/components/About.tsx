@@ -18,15 +18,16 @@ function About(){
                     <div className="skills">
                         <div className="skill_icon"> Java </div>
                         <div className="skill_icon"> C </div>
-                        <div className="skill_icon">ARM64</div>
                         <div className="skill_icon"> Python </div>
-                        <div className="skill_icon"> HTML </div>
-                        <div className="skill_icon"> CSS </div>
                         <div className="skill_icon"> JavaScript </div>
                         <div className="skill_icon"> React </div>
                         <div className="skill_icon">Nextjs</div>
                         <div className="skill_icon"> GitHub </div>
                         <div className="skill_icon"> Agile </div>
+                        <div className="skill_icon"> Quartus </div>
+                        <div className="skill_icon"> Verilog </div>
+                        <div className="skill_icon"> FPGA boards</div>
+                        <div className="skill_icon">ARM64</div>
                     </div>
 
                 </div>

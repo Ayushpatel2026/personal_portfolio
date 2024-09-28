@@ -4,6 +4,7 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Home from './components/Home'
 import Footer from './components/Footer'
+import Experience from './components/Experience'
 import './App.css'
 
 function App() {
@@ -13,11 +14,36 @@ function App() {
       <Header /> {/* add margin to the bottom of the header just to check */}
       <Home/>
       <About />
-      <section id="projects">
-        <span className="project-heading">
+      <section id="experience" className="section-container">
+        <span className="section-heading">
+          Experience
+        </span>
+        <div className="project-exp-container">
+          <Experience
+            jobTitle="Educational Research Assistant"
+            companyName="McMaster University"
+            timePeriod="June 2024 - August 2024"
+            jobDescription={[
+              "Created an automated testing environment using Bash scripts to automatically grade hundreds of ARM64 assembly assignments, reducing time spent grading and improving consistency of the grading process", 
+              "Created assignments and tutorial material for C and ARM64 assembly programming courses, improving student understanding of course material and increasing student engagement",
+              ]}
+          />
+          <Experience
+            jobTitle="Teaching Assistant - Digital Systems"
+            companyName="McMaster University"
+            timePeriod="September 2024 - December 2024"
+            jobDescription={[
+              "Supervised and assisted students in configuring FPGA boards, providing guidance on Verilog programming and Quartus software", 
+              "Facilitated lab sessions by demonstrating key concepts in digital systems and troubleshooting technical issues with FPGA implementation",
+              ]}
+          />
+        </div>
+      </section>
+      <section id="projects" className="section-container" style={{ backgroundColor: 'rgb(235, 235, 235)' }}>
+        <span className="section-heading">
           Projects
         </span>
-        <div className="project-container">
+        <div className="project-exp-container">
           <Project
             projectTitle="E-Commerce Website"
             projectDescription="This is a full stack application built with Next.js, Sanity as the backend CMS, and Stripe for payment processing. This modern e-commerce website provides a seamless shopping experience from browsing products, adding to cart and completing a purchase."
