@@ -3,15 +3,16 @@ import './Project.css'
 import React from 'react'
 
 interface ProjectProps {
+    id?: string;
     projectTitle: string;
     projectDescription: string;
     gitHubLink: string;
     websiteLink?: string;
 }
 
-function Projects({projectTitle, projectDescription, gitHubLink, websiteLink} : ProjectProps) {
+function Projects({id, projectTitle, projectDescription, gitHubLink, websiteLink} : ProjectProps) {
     return (
-        <div className="project">
+        <div className="project" id={id}>
             <div className="project-left">
                 <h2 className="project-title">{projectTitle}</h2>
             </div>
