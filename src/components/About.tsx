@@ -21,18 +21,18 @@ function About(){
                         <div className="skill_icon" onClick={() => scrollForSkills('rescue')}> Agile Methodologies </div>
                         <div className="skill_icon" onClick={() => scrollForSkills('TA')}> Digital System Design </div>
                         <div className="skill_icon" onClick={() => scrollForSkills('chess')}> Object Oriented Programming </div>
-                        <div className="skill_icon" onClick={() => scrollForSkills('ecommerce')}> Full Stack Web Development </div>
-                        <div className="skill_icon" onClick={() => scrollForSkills('stock-predictor')}> Machine Learning </div>
+                        <div className="skill_icon" onClick={() => scrollForSkills('SWE')}> Full Stack Web Development </div>
+                        <div className="skill_icon" onClick={() => scrollForSkills('cnn-malaria')}> Machine Learning </div>
                         <div className="skill_icon" onClick={() => scrollForSkills('TA')}> Computer Architecture </div>
-                        <div className="skill_icon" onClick={() => scrollForSkills('rescue')}> Software Testing </div>
-                        <div className="skill_icon" onClick={() => scrollForSkills('stock-predictor')}> Data Analysis </div>
+                        <div className="skill_icon" onClick={() => scrollForSkills('booking-app')}> Software Testing </div>
+                        <div className="skill_icon" onClick={() => scrollForSkills('cnn-malaria')}> Data Analysis </div>
                     </div>
                     <h3> Programming Languages and Tech! </h3>
                     <div className="skills">
                         <div className="tech-icon-container" onClick={() => scrollForSkills('rescue')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Java-%237883ff?style=for-the-badge&logo=JAVA&logoColor=%23ffffff" alt="Java Badge"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollForSkills('stock-predictor')}>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('cnn-malaria')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Python-%2380fffb?style=for-the-badge&logo=PYTHON&logoColor=%23ffffff" alt="Python Badge"/>
                         </div>
                         <div className="tech-icon-container" onClick={() => scrollForSkills('ERA')}>
@@ -56,7 +56,7 @@ function About(){
                         <div className="tech-icon-container" onClick={() => scrollForSkills('patient-manager')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollForSkills('ecommerce')}>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('booking-app')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
                         </div>
                         <div className="tech-icon-container" onClick={() => scrollForSkills('ecommerce')}>
@@ -65,7 +65,7 @@ function About(){
                         <div className="tech-icon-container" onClick={() => scrollForSkills('ecommerce')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Jest-%23c21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollToSection('projects')}>
+                        <div className="tech-icon-container" onClick={() => scrollToSection('booking-app')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Node.js-%236155ab?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
                         </div>
                         <div className="tech-icon-container" onClick={() => scrollToSection('projects')}>
@@ -95,20 +95,26 @@ function About(){
                         <div className="tech-icon-container" onClick={() => scrollForSkills('stock-predictor')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Matplotlib-%235c21ff?style=for-the-badge&logo=Matplotlib&logoColor=white" alt="Matplotlib"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollForSkills('stock-predictor')}>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('cnn-malaria')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/NumPy-%23bc5eff?style=for-the-badge&logo=NumPy&logoColor=%23ffffff" alt="NumPy"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollForSkills('stock-predictor')}>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('cnn-malaria')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Pandas-%2300b3ff?style=for-the-badge&logo=Pandas&logoColor=white" alt="Pandas"/>
                         </div>
-                        <div className="tech-icon-container" onClick={() => scrollForSkills('stock-predictor')}>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('cnn-malaria')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/Flask-%23ff0000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
                         </div>
-                        <div className="tech-icon-container">
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('cnn-malaria')}>
                             <img className="tech-icon" src="https://img.shields.io/badge/TensorFlow-%23ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
                         </div>
                         <div className="tech-icon-container">
                             <img className="tech-icon" src="https://img.shields.io/badge/Matlab-%238ff8ff?style=for-the-badge&logo=MathWorks&logoColor=white" alt="Matlab"/>
+                        </div>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('booking-app')}>
+                            <img className="tech-icon" src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=fff&style=flat" alt="Express.js"/>
+                        </div>
+                        <div className="tech-icon-container" onClick={() => scrollForSkills('booking-app')}>
+                            <img className="tech-icon" src="https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
                         </div>
                     </div>
                 </div>
