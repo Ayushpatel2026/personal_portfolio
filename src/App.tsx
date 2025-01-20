@@ -20,6 +20,7 @@ function App() {
         </span>
         <div className="project-exp-container">
           <Experience
+
             id="SWE"
             jobTitle="Software Engineer"
             companyName="iBiomed Society - McMaster"
@@ -67,6 +68,7 @@ function App() {
         </span>
         <div className="project-exp-container">
           <Project
+
             id='booking-app'
             projectTitle="MERN Hotel Booking App"
             projectDescription="The Hotel Booking Application is a full-stack solution designed and developed using MongoDB, Express.js, React.js, and Node.js. It provides users with the ability to search, book, and manage hotel reservations through a modern, responsive interface built with React.js and Tailwind CSS. The backend, powered by Node.js and Express.js, integrates MongoDB to ensure efficient storage and retrieval of user, booking, and hotel data. To guarantee reliability and functionality, end-to-end testing was implemented using Playwright."
