@@ -20,9 +20,18 @@ function App() {
         </span>
         <div className="project-exp-container">
           <Experience
+            id="Research"
+            jobTitle="Mobile App Security Research Intern"
+            companyName="McMaster Center for Software Certification (McSCert)"
+            timePeriod="May 2025 - Present"
+            jobDescription={[
+              "Investigating the security vulnerabilities of mobile healthcare applications"
+            ]}
+          />
+          <Experience
 
             id="SWE"
-            jobTitle="Software Engineer"
+            jobTitle="Software Developer"
             companyName="iBiomed Society - McMaster"
             timePeriod="Dec 2024 - Present"
             jobDescription={[
