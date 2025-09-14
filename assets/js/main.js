@@ -38,6 +38,151 @@ const shadowHeader = () =>{
 }
 window.addEventListener('scroll', shadowHeader)
 
+/*=============== PROJECT MODAL ===============*/
+const projectCards = document.querySelectorAll('.projects__card');
+const projectModal = document.getElementById('project-modal');
+const projectModalClose = document.getElementById('project-modal-close');
+const modalProjectTitle = document.getElementById('modal-project-title');
+const modalGithubLink = document.getElementById('modal-github-link');
+const modalProjectDescription = document.getElementById('modal-project-description');
+const projectVideo = document.getElementById('project-video');
+const projectImage = document.getElementById('project-image');
+
+// PROJECT DATA
+const projectData = {
+    'privacy-transparency': {
+        videoUrl: 'https://www.youtube.com/embed/k-5HXFbWKoI?autoplay=1&mute=1', 
+        imageUrl: 'assets/img/privacy-transparency.png',
+        title: 'AI-Driven Privacy Transparency for Mobile Health Apps',
+        github: 'https://github.com/Ayushpatel2026/privacy-transparency',
+        description: `Sleep Tracker is a mobile health application designed to demonstrate an AI-driven privacy transparency system for mobile health apps.
+                     The app features a novel embedded UI that alerts users to data collection events with real-time, easy-to-understand explanations of privacy risks.
+                     The app is built using React Native and Firebase. The backend is developed using Node.js and Express.js, providing a robust and scalable infrastructure for future development.`,
+    },
+    'movie-whiz': {
+        videoUrl: 'https://www.youtube.com/embed/KZY19NNbA4M?autoplay=1&mute=1', 
+        imageUrl: 'assets/img/movie-whiz.png',
+        title: 'MovieWhiz',
+        github: 'https://github.com/Ayushpatel2026/MovieWhiz',
+        description: `MovieWhiz is an Android application that helps users identify forgotten movies using LLMs, soundtrack recognition, and movie databases.
+                      I led the design and development of this project, which involved a full software development lifecycle, including requirements gathering, system architecture design, UML diagrams, implementation, and testing.
+                      I developed a RESTful API backend using Express.js and tested it using Jest. The backend is designed for scalability and extensibility, allowing for future enhancements and integrations.
+                      Key technologies include React Native, Express.js, Firebase and Android Studio.`
+    },
+    'rescue-mission': {
+        //videoUrl: 'https://www.youtube.com/embed/your-rescue-mission-video-id?autoplay=1', 
+        imageUrl: 'assets/img/rescue-mission.svg',
+        title: 'Rescue Mission',
+        github: 'https://github.com/Ayushpatel2026/rescue-mission',
+        description: `A Java-based project that involves developing a control system for a rescue drone to explore an island, locate stranded individuals, and identify suitable rescue points efficiently.
+                    This project emphasizes the use of design patterns and SOLID principles to create a modular and maintainable codebase.  
+                    This project provided valuable experience in teamwork, project management, and software development using agile methodologies.`
+    },
+    'cnn-malaria': {
+        videoUrl: 'https://www.youtube.com/embed/qsBpGCmDV74?autoplay=1&mute=1', 
+        imageUrl: 'assets/img/malaria.png',
+        title: 'CNN Malaria',
+        github: 'https://github.com/Ayushpatel2026/cnn-malaria',
+        description: `This project leverages Convolutional Neural Networks (CNNs) to classify blood cell images as either infected (parasitized) or uninfected with malaria.
+                      Achieving an accuracy of 94%, this solution demonstrates the use of modern machine learning techniques and MLOps principles to build a robust, modular, and collaborative pipeline.`
+    },
+    'hotel-booking': {
+        //videoUrl: 'https://www.youtube.com/embed/your-hotel-booking-video-id?autoplay=1', 
+        imageUrl: 'assets/img/hotel-booking.png',
+        title: 'Hotel Booking App',
+        github: 'https://github.com/Ayushpatel2026/booking-app',
+        description: `A full-stack hotel booking application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+                      This application provides a seamless experience for booking hotels, including payment integration via Stripe API and automated end-to-end testing using Playwright.`
+    },
+    'personal-website': {
+        //videoUrl: 'https://www.youtube.com/embed/your-personal-website-video-id?autoplay=1', 
+        imageUrl: 'assets/img/personal-website.png',
+        title: 'Personal Website',
+        github: 'https://github.com/Ayushpatel2026/personal_portfolio',
+        description: `Welcome to my personal website, created using plain HTML, CSS, and JavaScript. Please feel free to suggest any improvements to this portfolio website.`
+    }
+};
+
+
+// Function to open the modal
+const openProjectModal = (projectKey) => {
+    const data = projectData[projectKey];
+    if (data) {
+        modalProjectTitle.textContent = data.title;
+        modalGithubLink.href = data.github;
+        modalProjectDescription.textContent = data.description;
+
+        // Reset both elements
+        projectVideo.style.display = 'none';
+        projectImage.style.display = 'none';
+        projectVideo.src = '';
+        projectImage.src = '';
+
+        if (data.videoUrl) {
+            // Show video, hide image
+            projectVideo.src = data.videoUrl;
+            projectVideo.style.display = 'block';
+            projectImage.style.display = 'none';
+        } else if (data.imageUrl) {
+            // Show image, hide video
+            projectImage.src = data.imageUrl;
+            projectImage.alt = data.title;
+            projectImage.style.display = 'block';
+            projectVideo.style.display = 'none';
+        } else {
+            // Show placeholder in video element
+            projectVideo.style.display = 'flex';
+            projectVideo.style.alignItems = 'center';
+            projectVideo.style.justifyContent = 'center';
+            projectVideo.innerHTML = `
+                <div style="text-align: center; color: var(--text-color-light);">
+                    <i class="ri-image-line" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                    <p>No preview available</p>
+                </div>
+            `;
+            projectImage.style.display = 'none';
+        }
+
+        projectModal.classList.add('show-modal');
+    }
+};
+
+// Function to close the modal
+const closeProjectModal = () => {
+    projectModal.classList.remove('show-modal');
+    // Reset both elements
+    projectVideo.src = '';
+    projectImage.src = '';
+    projectVideo.innerHTML = '';
+    projectVideo.style.display = 'none';
+    projectImage.style.display = 'none';
+};
+
+// Event listener for clicking on project cards
+projectCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        // Prevent opening the modal if clicking on the GitHub link within the card
+        if (e.target.closest('.projects__button') || e.target.closest('.projects__link')) {
+            return;
+        }
+
+        const projectKey = card.getAttribute('data-project');
+        if (projectKey){
+            openProjectModal(projectKey);
+        }
+    });
+});
+
+// Event listener for closing the modal via the close button
+projectModalClose.addEventListener('click', closeProjectModal);
+
+// Event listener for closing the modal by clicking outside
+projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) {
+        closeProjectModal();
+    }
+});
+
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
       contactMessage = document.getElementById('contact-message')
