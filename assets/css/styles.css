@@ -90,55 +90,10 @@ img {
   height: auto;
 }
 
-.cursor-dot {
-  width: 5px;
-  height: 5px;
-  background-color: var(--text-color);
-  pointer-events: none;
-}
-
-.cursor-outline {
-  width: 30px;
-  height: 30px;
-  border: 2px solid var(--text-color);
-  opacity: 0.5;
-  pointer-events: none;
-  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
-}
-
-.cursor-dot,
-.cursor-outline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 2000;
-}
-
 .shrunk {
   width: 20px;
   height: 20px;
   background-color: var(--text-color);
-}
-
-body,
-a,
-input,
-button,
-div,
-span,
-i,
-textarea {
-  cursor: none;
-}
-
-/* Hide custom cursor on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .cursor-dot,
-  .cursor-outline {
-      display: none;
-  }
 }
 
 /*=============== THEME ===============*/

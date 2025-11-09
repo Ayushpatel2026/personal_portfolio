@@ -295,23 +295,6 @@ const sr = ScrollReveal({
             .contact__social, .contact__data`, {origin: 'left'})
  sr.reveal(`.services__card, .projects__card`, {interval: 100})
 
-/*======== CUSTOM CURSOR =======*/
-const cursorDot = document.querySelector("[data-cursor-dot]");
-const cursorOutline = document.querySelector("[data-cursor-outline]");
-
-window.addEventListener("mousemove", e => {
-    const posX = e.clientX;
-    const posY = e.clientY;
-
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
-
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-    }, { duration: 1000, fill: "forwards" });
-})
-
 window.addEventListener("mousedown", () => {
     cursorOutline.classList.add("shrunk");
 });
