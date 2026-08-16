@@ -848,7 +848,8 @@ body.dark-theme {
 .projects__img {
   width: 280px;
   height: 185.94px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: var(--container-color);
 }
 
 .projects__buttons {

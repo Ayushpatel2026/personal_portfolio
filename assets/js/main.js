@@ -100,6 +100,26 @@ const projectData = {
         title: 'Personal Website',
         github: 'https://github.com/Ayushpatel2026/personal_portfolio',
         description: `Welcome to my personal website, created using plain HTML, CSS, and JavaScript. Please feel free to suggest any improvements to this portfolio website.`
+    },
+    'pillmaxxer': {
+        videoUrl: 'https://youtube.com/embed/XxTDMnj8NWA?autoplay=1&mute=1', 
+        imageUrl: 'assets/img/pillmaxxer.png',
+        title: 'PillMaxxer',
+        github: 'https://github.com/Ayushpatel2026/PillMaxxer',
+        description: `PillMaxxer is a mobile application that helps users manage their medications and track their health.`
+    },
+    'ibiomed-website': {
+        //videoUrl: 'https://www.youtube.com/embed/your-personal-website-video-id?autoplay=1', 
+        imageUrl: 'assets/img/ibiomed-website.png',
+        title: 'iBiomed Society Website',
+        github: 'https://github.com/Haaniyaahmed/iBMS-Website',
+        description: `A dynamic, responsive website built with Next.js and Tailwind CSS, integrating external APIs for real-time content, reaching 500+ users.`
+    },
+    'scleroderma-app': {
+        //videoUrl: 'https://www.youtube.com/embed/your-personal-website-video-id?autoplay=1', 
+        imageUrl: 'assets/img/scleroderma-app.png',
+        title: 'ScleroCare app',
+        description: `A mobile application for managing scleroderma symptoms and tracking treatment progress build for Scleroderma Canada. The app was built using React Native and Firebase, providing a seamless experience for users to monitor their health and communicate with healthcare providers.`
     }
 };
 
@@ -109,7 +129,12 @@ const openProjectModal = (projectKey) => {
     const data = projectData[projectKey];
     if (data) {
         modalProjectTitle.textContent = data.title;
-        modalGithubLink.href = data.github;
+
+        if (!data.github) {
+            modalGithubLink.style.display = 'none';
+        } else {
+            modalGithubLink.href = data.github;
+        }
         modalProjectDescription.textContent = data.description;
 
         // Reset both elements
