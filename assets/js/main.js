@@ -105,7 +105,7 @@ const projectData = {
         videoUrl: 'https://youtube.com/embed/XxTDMnj8NWA?autoplay=1&mute=1', 
         imageUrl: 'assets/img/pillmaxxer.png',
         title: 'PillMaxxer',
-        github: 'https://github.com/Ayushpatel2026/PillMaxxer',
+        github: 'https://github.com/Ayushpatel2026/PillMaxxer1.0',
         description: `PillMaxxer is a mobile application that helps users manage their medications and track their health.`
     },
     'ibiomed-website': {
